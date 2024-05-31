@@ -61,6 +61,7 @@ if TYPE_CHECKING:
     )
     from langchain_community.callbacks.trubrics_callback import TrubricsCallbackHandler
     from langchain_community.callbacks.wandb_callback import WandbCallbackHandler
+    from langchain_community.callbacks.weavel_callback import WeavelCallbackHandler
     from langchain_community.callbacks.whylabs_callback import WhyLabsCallbackHandler
 
 # Create a way to dynamically look up deprecated imports.
@@ -92,6 +93,7 @@ DEPRECATED_LOOKUP = {
     "SageMakerCallbackHandler": "langchain_community.callbacks.sagemaker_callback",
     "LabelStudioCallbackHandler": "langchain_community.callbacks.labelstudio_callback",
     "TrubricsCallbackHandler": "langchain_community.callbacks.trubrics_callback",
+    "WeavelCallbackHandler": "langchain_community.callbacks.weavel_callback"
 }
 
 _import_attribute = create_importer(__file__, deprecated_lookups=DEPRECATED_LOOKUP)
@@ -135,4 +137,5 @@ __all__ = [
     "SageMakerCallbackHandler",
     "LabelStudioCallbackHandler",
     "TrubricsCallbackHandler",
+    "WeavelCallbackHandler"
 ]

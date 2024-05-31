@@ -33,6 +33,7 @@ EXPECTED_ALL = [
     "SageMakerCallbackHandler",
     "LabelStudioCallbackHandler",
     "TrubricsCallbackHandler",
+    "WeavelCallbackHandler"
 ]
 
 
